@@ -1,0 +1,147 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+       <title>Futuro Open Air w Poznaniu</title>
+       <meta charset="UTF-8">
+
+       <!--Funkcje-->
+       <script>
+       
+       document.getElementbyId("demo").addEventListener("mouseover", mouseOver);
+       document.getElementbyId("demo").addEventListener("mouseout", mouseOut);
+
+       function mouseOver() {
+           document.getElementById("demo").style.color = "darkred";
+       }
+
+       function mouseOut() {
+           document.getElementById("demo").style.color="black";
+       }
+
+       function czas(){
+           var poczatek = performance.now();
+           var koniec = performance.now();
+           alert("Dotarcie do końca zajęło Ci" + (koniec - poczatek) + " sek.");
+
+       }
+
+       function alertPuste() {
+       
+            var imie = document.getElementbyId("firstName").value,
+            nazwisko = document.getElementbyId("lastName").value,
+            odpowiedz = document.getElementbyId("odp").value;
+
+            if (imie== "" || nazwisko== "" || odpowiedz== "") {
+                alert("Wszystkie pola są wymagane");
+                return false;
+            }
+
+            else{
+            return true;
+            }
+
+      </script>
+   </head>
+   <body>
+   <div>
+        
+        <header>
+        <h1>Futuro Open Air w Poznaniu</h1>
+        <p id="podpis"> NATALIA KOSTRZEWA</p>
+        </header>
+
+        <br>
+
+        <!-- Wstęp -->
+
+        <p id="wstep">13 września 2018r. w holu budynku Bałtyk w Poznaniu, odbył się ostatni pokaz filmów organizowanych wspólnie przez uniwersytet SWPS i Short Waves
+        Festival. Krótkometrażówki zaprezentowane podczas wydarzenia różniły się formą, jednakże wszystkie opowiadały o tym samym - futurystycznej wizji świata,
+        przyszłości komunikacji człowieka z maszyną i zagrożeniom z tym związanym.</p>
+        
+        <!-- Zdjęcie -->
+
+        <br>
+        <br>
+	<br>
+
+        <center><img src="https://www.swps.pl/images/htg/wrzesien_2018/przystansztuki.jpg" alt="futuro open air swps" width="417" height="374" title="Plakat wydarzenia"></center>
+
+        <!-- Program -->
+ 
+        <h2 id="demo">Program</h2>
+        <p>Na potrzebę pokazu wyselekcjonowano 6 filmów z całego świata. Zakwalifikowane państwa i filmy przedstawia poniższa tabela:</p>
+        
+        <center>
+        <table border="10">
+        <tr><td></td><th>Reżyser</th><th>Kraj</th><th>Rok powstania</th></tr>
+        <tr><th>Life Cycles</th><td><center>Ross Hogg</center></td><td><center>Wielka Brytania</center></td><td><center>2016</center></td></tr>
+        <tr><th>Remote control</th><td><center>Gauthier Battoue</center></td><td><center>Francja</center></td><td><center>2017</center></td></tr>
+        <tr><th>Fomo Sapiens</th><td><center>Viktor Hertz</center></td><td><center>Szwecja</center></td><td><center>2016</center></td></tr>
+        <tr><th>I Know You from Somewhere</th><td><center>Andrew Fitzgerald</center></td><td><center>USA</center></td><td><center>2017</center></td></tr>
+        <tr><th>I WAS A WINNER</th><td><center>Jonad Odell</center></td><td><center>Szwecja</center></td><td><center>2016</center></td></tr>
+        <tr><th>I want Pluto to be a planet again</th><td><center>Vladimir Mavounia - Kouka</center></td><td><center>Francja</center></td><td><center>2016</center></td></tr>
+        </table>
+        </center>
+
+        <!-- Informacje o filmach -->
+
+        <h2 id="demo">O prezentowanych filmach</h2>
+        <p><em>Opisy filmów zaczerpnięte ze strony <a href="https://www.facebook.com/events/2183560808323997/">wydarzenia na Facebooku</a></em></p>
+        <ol>
+        <li><strong>Life Cycles, animacja 4 min.</strong></li>
+        <p>Obserwacja rutyny, monotonii, uwagi i rozproszenia. Czy pozwolimy, by wydarzenia wokół nas po prostu działy się, czy też zdecydujemy wyrwać się z
+        zaklętego kręgu ekranów?</p>
+        <li><strong>Remote control, fabuła 15 min.</strong></li>
+        <p>Kiedy system nieustająco ma cię pod kontrolą, wystarczy jeden fałszywy ruch czy zła decyzja, by spowodować śmiercionośny wybuch. Drony i uprzedzenia
+        wypełniają niebo, a “Remote Control” ujawnia jak mamy siebie (i innych) pod nieustannym nadzorem.</p>
+        <li><strong>Fomo Sapiens, fabuła 7 min.</strong></li>
+        <p>Para cierpiąca na najgorszą z możliwych odmianę “FOMO” (z ang. fear-of-missing-out, czyli lęk-przed-pominięciem), decyduje się podjąć trudne wyzwanie.</p>
+        <li><strong>I Know You from Somewhere, fabuła 15 min.</strong></li>
+        <p>Młoda kobieta musi zmierzyć się z gniewną reakcją Internetu w i poza siecią, kiedy przez przypadek staje się viralową sensacją jednego sezonu.</p>
+        <li><strong>I WAS A WINNER, dokument 14 min.</strong></li>
+        <p>Schowane za wirtualnymi awatarami, trzy osoby opowiadają o swoich doświadczeniach związanych z uzależnieniem od gier komputerowych. Bohaterowie malują
+        obraz świata, w którym jednostkowa egzystencja nacechowana jest odosobnieniem i izolacją, choć w ich życiu nie brakuje romantyzmu, zemsty, czy rywalizacji
+        z innymi.</p>
+        <li><strong>I want Pluto to be a planet again, animacja 12 min.</strong></li>
+        <p>Transhumanistyczny romans w niedalekiej przyszłości. Młody chłopak o skromnym pochodzeniu - Marcus, z gatunku H-, szaleńczo zakochuje się w H+.</p>
+        </ol>
+
+        <!-- Feedback -->
+
+        <h2 id="demo">Feedback</h2>
+        <p>Pokaz spotkał się z całkiem dużym zainteresowaniem. Na Facebooku udział w wydarzeniu wzięło 91 osób. W rzeczywistości było ich niemal dwukrotnie mniej,
+        ale hol pozostał wypełniony. Jedna z uczestniczek pokazu, studentka II roku kognitywistyki na UAM-ie, wyraziła chęć podzielenia się swoją opinią odnośnie
+        seansu: <q>Nie powiedziałabym, że jestem rozczarowana. Spodziewałam się, że nie będzie to widowisko na skalę "Black Mirror". Pomimo lekkiego uczucia niedosytu,
+        mogę śmiało uznać pokaz za miło spędzone 70 minut. Mam tylko jedno zastrzeżenie - za mało było "futuro" w Futuro. Wiele z przedstawionych w filmach wizji to
+        już rzeczywistość.</q></p>
+    
+        <!-- Formularz -->
+
+        <h2 id="demo">Formularz</h2>
+        <p><i>Drogi internauto!</p>
+        <p>Jaka jest Twoja opinia na temat darmowych wydarzeń i pokazów rodzaju Futuro Open Air w Poznaniu?</i></p>
+         
+        <form enctype="text/plain" action="mailto:natalia.kostrzewa111@gmail.com?subject=Formularz Futuro Open Air" method= "post" onsubmit= "return alertPuste();">
+            <p>Imię:</p>
+            <input type="text" id="firstName" name="firstName">
+            <br>
+            <p>Nazwisko:</p>
+            <input type="text" id="lastName" name="lastName">
+            <p>
+                Uważam, że...
+                <br><br>
+                <textarea name="odp" id="odp" rows="9" cols="50"></textarea>
+            </p>
+            <input type="submit" value="Submit">
+         </form>
+
+         <br>
+         <button onclick="czas()">Sprawdź czas</button>
+    </div>
+    <footer>
+    <p>Natalia Kostrzewa</p>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+/*Ustawienia wstêpne*/
+html, h1, #wstep {
+      margin: 0;
+      padding: 0;
+}
+
+/*T³o, odstêpy*/
+body {
+    background-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFvY_ecAVp-wuhupqi9TUQA3CYVBnRjNB_kbBkS6GPGuCk_IFCMrX2keU("gradient.jpg");
+}
+
+div {
+    width: 800px;
+    padding: 40px;
+    margin-left: 40px;
+}
+
+/*Ustawienia nag³ówka*/
+h1 {
+    text-align: left;
+    font-family: Bookman Old Style;
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+/*Ustawienia podpisu*/
+#podpis {
+    text-align: left;
+    font-family: Arial;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+/*Ustawienia wstêpu*/
+#wstep {
+    text-align: left;
+    font-family: Cambria;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+/*Ustawenia akapitów, list*/
+p, li {
+    text-align: left;
+    font-family: Cambria;
+    font-size: 18px;
+}
+
+/*Ustawenia tytu³ów akapitów*/
+h2 {
+    text-align: left;
+    font-family: Bookman Old Style;
+    font-size: 22px;
+}
+
+/*Ustawienia linków*/
+a:link {
+    color: black;
+    text-decoration: underline;
+}
+a:visited {
+    color: black
+}
+a:hover {
+    color: white;
+    background-color: black;
+}
+a:active {
+    color: darkred;
+    background-color: black;
+}
+
+/*Stopka*/
+footer {
+    background-color: rgba(180, 180, 180, 0.4);
+    padding: 10px;
+    text-align: center;
+    color: grey;
+}
